@@ -1,7 +1,7 @@
 steps:
-- name: 'ubuntu'
-  args: ['bash', './myscript.bash']
+- name: 'gcr.io/$PROJECT_ID/ubuntu-curl'
+  args: ['bash', './curl.bash']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/custom-script-test', '.']
-images: ['gcr.io/$PROJECT_ID/custom-script-test']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/custom-script-test2', '.']
+images: ['gcr.io/$PROJECT_ID/custom-script-test2']
 

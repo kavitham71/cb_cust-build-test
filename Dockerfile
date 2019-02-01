@@ -1,4 +1,4 @@
 FROM alpine
-COPY file.txt /file.txt
-ENTRYPOINT ["cat", "/file.txt"]
+COPY example.html /example.html
+ENTRYPOINT ["cat", "/example.html"]
 
