@@ -1,6 +1,6 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-f', 'Dockerfile.ubuntu-curl', '-t', gcr.io/your-project/ubuntu-curl', '.']
+   args: [['build', '-f', 'Dockerfile.ubuntu-curl'], ['build','-t', gcr.io/your-project/ubuntu-curl'], '.']
 #- name: 'gcr.io/$PROJECT_ID/ubuntu-curl'
 #  args: ['bash', './curl.bash']
 #- name: 'gcr.io/cloud-builders/docker'
