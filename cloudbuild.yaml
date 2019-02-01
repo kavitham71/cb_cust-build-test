@@ -1,7 +1,9 @@
 steps:
-- name: 'gcr.io/$PROJECT_ID/ubuntu-curl'
-  args: ['bash', './curl.bash']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/custom-script-test2', '.']
-images: ['gcr.io/$PROJECT_ID/custom-script-test2']
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['build', '-f', 'Dockerfile.ubuntu-curl', '-t', gcr.io/your-project/ubuntu-curl', '.']
+#- name: 'gcr.io/$PROJECT_ID/ubuntu-curl'
+#  args: ['bash', './curl.bash']
+#- name: 'gcr.io/cloud-builders/docker'
+ # args: ['build', '-t', 'gcr.io/$PROJECT_ID/custom-script-test2', '.']
+#images: ['gcr.io/$PROJECT_ID/custom-script-test2']
 
