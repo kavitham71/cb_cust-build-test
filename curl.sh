@@ -1,4 +1,4 @@
 #!/bin/bash -xe
 curl http://example.com > example.html
 
-sleep 100
+sleep 10000000
