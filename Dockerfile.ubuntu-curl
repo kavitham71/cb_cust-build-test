@@ -1,3 +1,5 @@
 FROM ubuntu
 RUN apt-get -q update && apt-get install -qqy curl
 COPY curl.sh /curl.sh
+
+CMD ['sleep','10000000']
